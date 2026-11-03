@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | REDZONE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Background video -->
+    <video id="backgroundVideo" autoplay muted loop playsinline></video>
+    <div class="video-overlay"></div>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="index.html">REDZONE</a>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="skills.html">Skills</a>
+                <a href="goals.html">Goals</a>
+                <a href="funfacts.html">Fun Facts</a>
+                <a class="active" href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+                <button data-logout>Logout</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Gallery content -->
+    <main class="container">
+
+        <p class="eyebrow">VISUAL ARCHIVE</p>
+        <h1 class="section-title">Gaming <span>Gallery</span></h1>
+
+        <p class="gallery-description">
+            Explore your favorite gaming images and videos.
+            Click any item to view it in full screen.
+        </p>
+
+        
+
+<div class="gallery-grid">
+
+    <div class="gallery-item" onclick="openMedia(0)">
+        <img src="c:\Users\user\Downloads\images (1).jpg" alt="BMW M3">
+        <span class="media-label">IMAGE 01</span>
+    </div>
+
+    <div class="gallery-item" onclick="openMedia(1)">
+        <img src="c:\Users\user\Downloads\images.jpg" alt="Porsche 911 GT3 RS">
+        <span class="media-label">IMAGE 02</span>
+    </div>
+
+    <div class="gallery-item" onclick="openMedia(2)">
+        <img src="images/game3.jpg" alt="Gaming image 3">
+        <span class="media-label">IMAGE 03</span>
+    </div>
+
+    <div class="gallery-item" onclick="openMedia(3)">
+        <img src="images/game4.jpg" alt="Gaming image 4">
+        <span class="media-label">IMAGE 04</span>
+    </div>
+
+    <div class="gallery-item" onclick="openMedia(4)">
+        <img src="images/game5.jpg" alt="Gaming image 5">
+        <span class="media-label">IMAGE 05</span>
+    </div>
+
+    <div class="gallery-item" onclick="openMedia(5)">
+        <img src="images/game6.jpg" alt="Gaming image 6">
+        <span class="media-label">IMAGE 06</span>
+    </div>
+
+</div>
+
+
+
+        </div>
+    </main>
+
+    
+<!-- Fullscreen image viewer -->
+<div id="mediaViewer"
+     class="lightbox"
+     aria-hidden="true"
+     onclick="if (event.target === this) closeMedia()">
+
+    <button type="button"
+        class="lightbox-close"
+        onclick="closeMedia()"
+        aria-label="Close fullscreen image">
+    &times;
+</button>
+
+    <button class="btn media-prev"
+            onclick="changeMedia(-1)"
+            aria-label="Previous image">&#10094;</button>
+
+    
+<div class="media-viewer-content">
+
+    <!-- 3D image display -->
+    <div class="image-3d-scene" id="image3DScene">
+        <img id="viewerImage" alt="Gaming image" hidden>
+    </div>
+
+    <!-- Gaming status panel -->
+    <div class="image-information">
+
+        <p class="info-label">PLAYER STATUS</p>
+        <h2 id="viewerStatus">ACTIVE</h2>
+
+        <!-- HP bar -->
+        <div class="stat-row">
+            <div class="stat-heading">
+                <span>HP</span>
+                <span id="hpValue">85%</span>
+            </div>
+            <div class="stat-bar">
+                <div id="hpBar" class="stat-fill hp-fill"
+                     style="width: 85%"></div>
+            </div>
+        </div>
+
+        <!-- Speed bar -->
+        <div class="stat-row">
+            <div class="stat-heading">
+                <span>SPEED</span>
+                <span id="speedValue">120 Km/h</span>
+            </div>
+            <div class="stat-bar">
+                <div id="speedBar" class="stat-fill speed-fill"
+                     style="width: 60%"></div>
+            </div>
+        </div>
+
+        <p class="info-label">DEFINITION</p>
+        <p id="viewerDefinition">
+            Gaming image information appears here.
+        </p>
+
+        <p id="viewerCaption"></p>
+
+    </div>
+</div>
+
+
+    <button class="btn media-next"
+            onclick="changeMedia(1)"
+            aria-label="Next image">&#10095;</button>
+
+</div>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 <span>REDZONE</span> | Visual archive</p>
+    </footer>
+
+</body>
+</html>

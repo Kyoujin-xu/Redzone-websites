@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REDZONE | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<video id="backgroundVideo" autoplay muted loop playsinline></video>
+<div class="video-overlay"></div>
+
+<header>
+    <nav class="navbar">
+        <a class="logo" href="index.html">REDZONE</a>
+
+        <div class="nav-links">
+            <a class="active" href="index.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="goals.html">Goals</a>
+            <a href="funfacts.html">Fun Facts</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <button type="button" data-logout>Logout</button>
+        </div>
+    </nav>
+</header>
+
+<main class="container">
+
+    <!-- HOME HERO -->
+    <section class="home-hero">
+
+        <div class="hero-content">
+            <p class="eyebrow">User Profile • Level Up</p>
+
+            <h1>
+                Enter the <span class="redzone-word">REDZONE</span>
+            </h1>
+
+            <p>
+                Welcome to my gaming-inspired personal website.
+                Discover my skills, ambitions, interests, and favorite
+                moments in a world of red, black, and adrenaline.
+            </p>
+
+            <a href="skills.html" class="btn">
+                Explore My Skills
+            </a>
+        </div>
+
+        <!-- PROFILE PICTURE -->
+        <div class="home-profile">
+
+            <label
+                class="profile-upload"
+                for="profileUpload"
+                title="Upload profile picture"
+            >
+                <img
+                    id="profilePreview"
+                    alt="Profile picture"
+                >
+
+                <span id="profilePlaceholder">+</span>
+            </label>
+
+            <input
+                type="file"
+                id="profileUpload"
+                accept="image/*"
+                hidden
+            >
+
+            <h3 id="profileUsername">PLAYER</h3>
+
+            <p>CHANGE PROFILE PHOTO</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURE CARDS -->
+    <section style="margin-top:40px">
+
+        <div class="grid">
+
+            <article class="card">
+                <div class="card-icon">🎮</div>
+
+                <h3>My Skills</h3>
+
+                <p>
+                    Explore my technical and personal abilities.
+                </p>
+
+                <p style="margin-top:15px">
+                    <a class="btn btn-outline" href="skills.html">
+                        View Skills
+                    </a>
+                </p>
+            </article>
+
+
+            <article class="card">
+                <div class="card-icon">🎯</div>
+
+                <h3>My Goals</h3>
+
+                <p>
+                    Discover the milestones I want to achieve.
+                </p>
+
+                <p style="margin-top:15px">
+                    <a class="btn btn-outline" href="goals.html">
+                        View Goals
+                    </a>
+                </p>
+            </article>
+
+
+            <article class="card">
+                <div class="card-icon">📸</div>
+
+                <h3>My Gallery</h3>
+
+                <p>
+                    Browse photos and moments worth remembering.
+                </p>
+
+                <p style="margin-top:15px">
+                    <a class="btn btn-outline" href="gallery.html">
+                        Open Gallery
+                    </a>
+                </p>
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- MINDSET SECTION -->
+    <section style="margin-top:40px" class="card">
+
+        <p class="eyebrow">User Mindset</p>
+
+        <h2 style="margin:10px 0">
+            Never stop
+            <span style="color:#ff2020">
+                leveling up.
+            </span>
+        </h2>
+
+        <p>
+            Every challenge is another opportunity to improve,
+            learn, and win.
+        </p>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>
+        © 2026 <span>REDZONE</span> | Game on. Level up.
+    </p>
+</footer>
+
+</body>
+</html>

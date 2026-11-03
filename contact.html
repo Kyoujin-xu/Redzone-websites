@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | REDZONE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<video id="backgroundVideo" autoplay muted loop playsinline></video>
+<div class="video-overlay"></div>
+
+<header>
+    <nav class="navbar">
+        <a class="logo" href="index.html">REDZONE</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="goals.html">Goals</a>
+            <a href="funfacts.html">Fun Facts</a>
+            <a href="gallery.html">Gallery</a>
+            <a class="active" href="contact.html">Contact</a>
+            <button data-logout>Logout</button>
+        </div>
+    </nav>
+</header>
+
+<main class="container">
+    <p class="eyebrow">Open communications</p>
+    <h1 class="section-title">Contact <span>Me</span></h1>
+    <p style="margin-bottom:25px">
+        Have a question, collaboration idea, or project in mind?
+        Send a message using the form.
+    </p>
+
+    <div class="contact-layout">
+        <section class="card">
+            <h2 style="margin-bottom:20px">Send a Message</h2>
+
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="contactName">Your Name</label>
+                    <input id="contactName" type="text"
+                           placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactEmail">Email Address</label>
+                    <input id="contactEmail" type="email"
+                           placeholder="you@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactSubject">Subject</label>
+                    <input id="contactSubject" type="text"
+                           placeholder="Message subject" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactMessage">Message</label>
+                    <textarea id="contactMessage"
+                              placeholder="Write your message..."
+                              required></textarea>
+                </div>
+
+                <button class="btn" type="submit">Submit Message</button>
+                <p id="contactStatus" class="status-message"
+                   aria-live="polite"></p>
+            </form>
+        </section>
+
+        <aside class="card">
+            <h2 style="margin-bottom:20px">Player Information</h2>
+            <h3></h3>Location</h3>
+            <p>Philippines</p>
+
+            <h3 style="margin-top:22px">Interests</h3>
+            <p>Information Technology, web development,
+               gaming, and graphic design.</p>
+
+            <h3 style="margin-top:22px">Collaboration</h3>
+            <p>Interested in learning, creating projects,
+               and sharing ideas with other developers.</p>
+        </aside>
+    </div>
+</main>
+
+<footer><p>© 2026 <span>REDZONE</span> | Contact</p></footer>
+</body>
+</html>

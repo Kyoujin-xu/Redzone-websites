@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills | REDZONE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<video id="backgroundVideo" autoplay muted loop playsinline></video>
+<div class="video-overlay"></div>
+
+<header>
+    <nav class="navbar">
+        <a class="logo" href="index.html">REDZONE</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a class="active" href="skills.html">Skills</a>
+            <a href="goals.html">Goals</a>
+            <a href="funfacts.html">Fun Facts</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <button data-logout>Logout</button>
+        </div>
+    </nav>
+</header>
+
+<main class="container">
+    <p class="eyebrow">Player statistics</p>
+    <h1 class="section-title">My <span>Skills</span></h1>
+    <p style="margin-bottom:25px">Select a category to view my abilities.</p>
+
+    <div class="tab-buttons">
+        <button class="tab-button active" data-tab="it">IT Skills</button>
+        <button class="tab-button" data-tab="design">Graphic Design</button>
+        <button class="tab-button" data-tab="speaking">Public Speaking</button>
+        <button class="tab-button" data-tab="problem">Problem Solving</button>
+    </div>
+
+    <section id="it" class="tab-content active card">
+        <h2>IT Skills</h2>
+        <p>Programming, HTML, CSS, JavaScript, computer troubleshooting,
+           and learning new technologies.</p>
+    </section>
+
+    <section id="design" class="tab-content card">
+        <h2>Graphic Design</h2>
+        <p>Creating layouts, gaming banners, esports logos,
+           wallpapers, and digital visual concepts.</p>
+    </section>
+
+    <section id="speaking" class="tab-content card">
+        <h2>Public Speaking</h2>
+        <p>Practicing clear communication, presentations,
+           explaining ideas, and speaking confidently.</p>
+    </section>
+
+    <section id="problem" class="tab-content card">
+        <h2>Problem Solving</h2>
+        <p>Analyzing errors, testing solutions, troubleshooting,
+           and breaking complicated tasks into smaller steps.</p>
+    </section>
+</main>
+
+<footer><p>© 2026 <span>REDZONE</span> | My Skills</p></footer>
+</body>
+</html>

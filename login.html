@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | REDZONE</title>
+
+    <link rel="stylesheet" href="login_style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Video Background -->
+    <video id="backgroundVideo" autoplay muted loop playsinline></video>
+    <div class="video-overlay"></div>
+
+    <!-- Login and Sign Up -->
+    <main class="login-page">
+        <section class="form-container">
+
+            <h1 id="formTitle">Login</h1>
+            <p id="formSubtitle">
+                Enter the game. Own the battlefield.
+            </p>
+
+            <form id="authForm"
+                  data-mode="login"
+                  onsubmit="handleAuth(event)">
+
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input
+                        id="username"
+                        type="text"
+                        placeholder="Enter username"
+                        autocomplete="username"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+
+                    <div class="password-row">
+                        <input
+                            id="password"
+                            type="password"
+                            placeholder="Enter password"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                        <button
+                            class="show-password"
+                            type="button"
+                            onclick="togglePassword('password')"
+                        >
+                            Show
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-group" id="confirmGroup" hidden>
+                    <label for="confirmPassword">
+                        Confirm Password
+                    </label>
+
+                    <input
+                        id="confirmPassword"
+                        type="password"
+                        placeholder="Repeat password"
+                        autocomplete="new-password"
+                    >
+                </div>
+
+                <button
+                    class="primary-button"
+                    id="authButton"
+                    type="submit"
+                >
+                    Login
+                </button>
+
+                <p
+                    id="formMessage"
+                    class="form-message"
+                    aria-live="polite"
+                ></p>
+            </form>
+
+            <!-- Sign Up / Login Switch -->
+            <div class="switch-form">
+                <span id="switchText">New User?</span>
+                <button id="switchButton" type="button">
+                    Sign Up
+                </button>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+</html>
